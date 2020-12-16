@@ -1,0 +1,48 @@
+$primary-color:#272727;
+$secondary-color:rgb(238, 235, 235);
+$hover-color:rgb(253, 215, 0);
+@mixin flex-image ($h,$img){
+        height: $h;
+        width: 100%;
+        background: linear-gradient(
+            to right,
+            rgba($primary-color,0.7),
+            rgba($primary-color,0.2)
+        ),url($img) ;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size:cover;
+}
+@mixin flex-all($dir,$wrap,$align,$justif){
+        display: flex;
+        flex-flow: $dir $wrap;
+        align-items: $align;
+        justify-content: $justif;
+} 
+@mixin hover(){
+        transform: scale(1.1) translateZ(0px);
+        color:$hover-color;
+}
+@mixin transition-ease{
+    transition: all 0.5s ease-in-out;
+}
+@mixin media-xs{
+    @media screen and (min-width:440px){
+        @content;
+    }
+}
+@mixin media-md{
+    @media screen and (min-width:768px){
+        @content;
+    }
+}
+@mixin media-lg{
+    @media screen and (min-width:1200px){
+        @content;
+    }
+}
+@mixin media-xl{
+    @media screen and (min-width:1600px){
+        @content;
+    }
+}

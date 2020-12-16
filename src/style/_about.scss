@@ -1,0 +1,133 @@
+.about_me{
+    &-image{
+        @include flex-image(39vh,"./img/about.jpg");
+        @include flex-all(column,nowrap,center,center);
+    }
+    &-list{
+        @include flex-all(column,nowrap,initial,initial);
+        .details {
+            padding-top: 14vh;
+            padding-bottom: 3vh;
+            background: linear-gradient(
+            to right,
+            rgba($primary-color,0.8),
+            rgba($primary-color,0.4)
+        ), white ;       
+            position: relative;
+            h2{
+                color: $hover-color;
+                text-align: center;
+            }    
+            .bio {
+                text-align: center;
+                padding: 0 11.5vw 0 11.5vw;
+                line-height: 25px;
+                font-family: 'Kalam', cursive;
+            }
+            .social-icons {
+                    position: relative;
+                    font-size: 1.7rem;
+                    padding: 1rem 4.2rem .5rem 4.2rem;
+                        }
+            .word{
+                    text-transform:uppercase ;
+                    font-weight: bold; 
+                    color:$hover-color;  
+                    font-family: 'Indie Flower', cursive;
+                }
+        }
+        .exp-educ{
+             @include flex-all(column,nowrap,center,initial);
+             padding: 8vh 0; 
+        }
+        
+        .experience {
+            width: 80%;
+            margin: .5rem 0;
+            @include flex-all(column,nowrap,initial,initial);
+            h4{
+                margin-bottom: .3rem;
+            }
+            h2 {
+                text-align: center;
+                color: $hover-color;
+            }
+            &-line{
+                margin: .7rem 11.7vw;
+            }
+            &-info{
+                margin: 0 auto;
+                width: 70%;
+                border-left: 3px dotted $hover-color;
+                position: relative;
+                .team {
+                    min-height:80px;
+                    line-height: 17px;
+                    text-align: center;
+                }
+                svg {
+                    color: $secondary-color;
+                    position: absolute;
+                    left: -.55rem;
+                    width: 14px;
+                }
+            }
+
+        }
+        .personal_container{
+            @include flex-all(column,nowrap,center,initial);
+             background: linear-gradient(
+                to right,
+                rgba($primary-color,0.8),
+                rgba($primary-color,0.4)
+             ), white ;
+            padding: 2rem 0;
+            &-info {
+                padding-bottom: 1.5rem;
+                width: 75vw;
+                p{
+                    padding: 0 .2rem;
+                    @include flex-all(row,nowrap,initial,space-between);
+                }
+                .icon {
+                    color: $secondary-color;
+                    font-size: 1rem;
+                    margin-right: .2rem;
+                    width: 20px;
+                    height: auto;
+                }
+                .check {
+                    color: rgb(14, 189, 14);
+                    margin-left: .5rem;
+                }
+                }
+            .info-title{
+                text-align: center;
+                margin: 0 0 1.4rem 0;
+            }
+            .info-item {
+                color: $hover-color;
+                padding-right: .2rem;
+                @include flex-all(row,nowrap,center,center);
+            }
+        }
+    }
+    h1 {
+        text-align: center;
+        line-height: 35px;
+        color:$hover-color;
+        font-size: 2.7rem;
+    }
+    img {
+       //filter: 80%;
+        width: 145px;
+        border-radius: 50%;
+        border:3px solid $secondary-color;
+        position: absolute;
+        margin: -70px auto;
+        right: 0;
+        left: 0;
+        z-index: 1;
+        }
+}
+

@@ -1,0 +1,79 @@
+@import "./config";
+@import "./navbar";
+@import "./home";
+@import "./projects";
+@import "./about";
+@import "./responsive";
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Roboto', Helvetica, Sans-Serif;
+  }
+  body {
+    background: linear-gradient(
+                to right,
+                rgba($primary-color,1),
+                rgba($primary-color,.9),
+                rgba($primary-color,0.8)
+            ), white ;   
+    height: 100vh;
+    color:$secondary-color;
+  }
+  header {
+    width:100%;
+  }
+  main {
+    height: 100%;
+    width: 100%;
+    footer{
+      text-align: center;
+      width: 100%;
+      .social-icons {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        font-size: 2rem;
+        padding-bottom: .2rem;
+        a{
+          svg {
+            @include transition-ease;
+            &:hover {
+              @include transition-ease;
+              @include hover;
+            }
+          }
+          padding: 0.3rem;
+        }
+    }
+    }
+  }
+  ul{
+    list-style:none;
+  }
+  .line-title {
+    //border-bottom: 2px solid $secondary-color;
+    color: $hover-color;
+  }
+  a {
+    text-decoration: none;
+    color:#fff;
+    @include transition-ease;
+    &:hover {
+      @include transition-ease;
+      @include hover;
+    }
+  }
+  h1,h2 {
+    font-weight: 300;
+    letter-spacing: 3px;
+  }
+  hr {
+    margin:.7rem 0;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(231, 230, 230, 0.5), rgba(255, 255, 255, 0.9), rgba(231, 230, 230, 0.5));
+  }
+  
+

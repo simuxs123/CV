@@ -1,0 +1,69 @@
+.navbar {
+    height:100vh;
+    width:100%;
+    background: rgb(228,228,228);
+    background: linear-gradient(178deg, rgba(228,228,228,1) 0%, rgba(190,190,190,1) 31%, rgba(93,93,93,1) 100%);
+    z-index: 2;
+    position: fixed;
+    @include flex-all(row,nowrap,center,center);
+    top:0;
+    left:0;
+    transform: translateY(-100%);
+    @include transition-ease;
+    font-size: 2rem;
+    font-weight: 300;
+    color: $secondary-color;
+    visibility: visible;
+    &.open{
+        transform: translateY(0);
+    }
+    .nav_list { 
+        @include flex-all(column,nowrap,center,space-evenly);
+        height: 50vh;       
+        &-item {
+            transform: translateX(100vw);
+            @include transition-ease;
+            :hover {
+                @include transition-ease;
+                color:$hover-color;
+            }
+            &.open {
+                transform: translateX(0);
+            }
+            a.current {
+                color:$hover-color;
+            }
+        }
+    }  
+}   
+.burger-btn{
+    position:fixed;
+    right:20px;
+    top: 10px;
+    height:2rem;
+    width:2rem;
+    @include flex-all(column,nowrap,initial,space-around);
+    z-index: 4;
+    i{
+        width:2rem;
+        height:4px;
+        background-color:$secondary-color;
+        @include transition-ease;
+    }
+    .open:nth-child(1){
+            transform: rotate(45deg) translate(5px,8px);
+    }
+    .open:nth-child(2){
+        
+        background: transparent;
+    }
+    .open:nth-child(3){
+        transform: rotate(-45deg) translate(7px, -10px);
+    }
+}
+@for $i from 1 through 4 {
+    .nav_list-item:nth-child(#{$i}){
+        transition-delay: ($i*0.1s)+0.15s;
+    }
+}
+

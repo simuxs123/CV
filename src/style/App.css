@@ -1,0 +1,259 @@
+
+.navbar {
+  height: 100vh;
+  width: 100%;
+  background: #a0d2f3;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.5), rgba(39, 39, 39, 0.2)), linear-gradient(178deg, #a0d2f3 0%, #9dbd71 74%, #68b54e 100%);
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+  transition: all 0.5s ease-in-out;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #f0e7e7;
+}
+
+.navbar.open {
+  transform: translateY(0);
+}
+
+.navbar .nav_list {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 50vh;
+}
+
+.navbar .nav_list-item {
+  transform: translateX(100vw);
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar .nav_list-item :hover {
+  transition: all 0.5s ease-in-out;
+  color: #fdd700;
+}
+
+.navbar .nav_list-item.open {
+  transform: translateX(0);
+}
+
+.navbar .nav_list-item a.current {
+  color: #fdd700;
+}
+
+.burger-btn {
+  position: fixed;
+  right: 20px;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  z-index: 1;
+}
+
+.burger-btn i {
+  width: 2rem;
+  height: 4px;
+  background-color: #f0e7e7;
+  transition: all 0.5s ease-in-out;
+}
+
+.burger-btn .open:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 8px);
+}
+
+.burger-btn .open:nth-child(2) {
+  background: transparent;
+}
+
+.burger-btn .open:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -10px);
+}
+
+.nav_list-item:nth-child(1) {
+  transition-delay: 0.25s;
+}
+
+.nav_list-item:nth-child(2) {
+  transition-delay: 0.35s;
+}
+
+.nav_list-item:nth-child(3) {
+  transition-delay: 0.45s;
+}
+
+.nav_list-item:nth-child(4) {
+  transition-delay: 0.55s;
+}
+
+.menu {
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.7), rgba(39, 39, 39, 0.2)), url("./img/simas.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  padding-top: 45vh;
+  text-align: center;
+  color: #f0e7e7;
+}
+
+.menu-name {
+  color: #fdd700;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.menu h2 {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.projects-image {
+  height: 36vh;
+  margin-bottom: 1rem;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.5), rgba(39, 39, 39, 0.2)), url("./img/project.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.projects-image h1 {
+  margin-bottom: 2.7rem;
+  font-size: 2.7rem;
+  color: #fdd700;
+}
+
+.projects-items {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-items-item {
+  margin: 0 0 3rem 0;
+  height: 35vh;
+  width: 65vw;
+  background-color: #414141;
+  text-align: center;
+  position: relative;
+  border-bottom: 4px solid #fdd700;
+  color: #fdd700;
+}
+
+.projects-items-item img {
+  filter: brightness(50%);
+  width: 100%;
+  height: 100%;
+}
+
+.projects-items-item .item-content {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.projects-items-item .item-content svg {
+  margin-top: .5rem;
+  font-size: 4rem;
+  color: lightskyblue;
+}
+
+.projects-items-item .item-content h2 {
+  margin-top: 1rem;
+}
+
+.projects-items-item .item-content .btns {
+  margin-top: .5rem;
+}
+
+.projects-items-item .item-content .btns .btn {
+  padding: 1rem;
+}
+
+.projects-items-item .item-content .btns .btn-icon {
+  color: #f0e7e7;
+  margin-right: .2rem;
+  font-size: 1.2rem;
+  vertical-align: bottom;
+}
+
+.projects-items-item .item-content .js {
+  color: #ffdd1d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Open-Sans, Helvetica, Sans-Serif;
+}
+
+body {
+  background-color: #272727;
+  height: 100vh;
+  color: #f0e7e7;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  background: transparent;
+  position: fixed;
+}
+
+footer {
+  background: transparent;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer .social-icons {
+  text-align: center;
+  font-size: 1.9rem;
+}
+
+footer .social-icons a {
+  padding: 0.3rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  transition: all 0.5s ease-in-out;
+  color: #fdd700;
+}
+
+h1, h2 {
+  font-weight: 300;
+}
+
+hr {
+  margin: .7rem;
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, rgba(231, 230, 230, 0.5), rgba(255, 255, 255, 0.9), rgba(231, 230, 230, 0.5));
+}
+/*# sourceMappingURL=App.css.map */

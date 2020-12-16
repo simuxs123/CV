@@ -1,0 +1,78 @@
+.projects {
+    &-image{
+        @include flex-image(39vh,"./img/project.jpg");
+        @include flex-all(row,nowrap,center,center);
+        h1{
+            margin-bottom: 2.7rem;
+            font-size: 2.7rem;
+            color:$hover-color;
+        }
+    }
+    &-items{
+        @include flex-all(column,nowrap,center,center);
+        padding: 10vh 1vw;
+        &-item{
+            margin:0 0 3rem 0;
+            height: 210px;
+            width: 68vw;
+            background-color: lighten($color: $primary-color, $amount: 10);
+            text-align: center;
+            position: relative;
+            border-bottom: 4px solid $hover-color;
+            color: $hover-color;
+            z-index: 1;
+            img {
+                filter: brightness(50%);
+                width: 100%;
+                height: 100%;
+            }
+            .item-content{
+                @include flex-all(column,nowrap,center,center);
+                height: 100%;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                .tag{
+                    align-self: flex-end;
+                    position: absolute;
+                    bottom:0;
+                    margin-right:3px;
+                    margin-bottom: 3px;
+                    font-size: .7rem;
+                    color: $secondary-color;
+                    &-icon{
+                        font-size: .8rem;
+                        vertical-align: bottom;
+                        margin-right: 3px;
+                    }
+                }
+                svg {
+                    margin-top: .3rem;
+                    font-size: 4rem;
+                }
+                .react{
+                    color: lightskyblue;
+                }
+                .js{
+                    color: rgb(255, 221, 29);
+                }
+                
+                .btns {
+                    margin-top: .3rem;
+                    .btn{
+                        padding:0 .8rem;
+                        &-icon{
+                            margin-right: .2rem;
+                            font-size: 1.2rem;  
+                            vertical-align: bottom; 
+                        }  
+                    }
+                }  
+            }
+        }
+    }
+    .social-icons {
+        @include flex-all(column,nowrap,flex-start,initial);
+        margin-left: .2rem;
+    }
+}
