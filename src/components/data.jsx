@@ -1,6 +1,7 @@
 import logo from '../style/img/react.jpg'
 import world from '../style/img/world.jpg'
 import weather from "../style/img/weather.jpg"
+import post from "../style/img/post.jpg"
 import {MdPhoneIphone,MdEmail,MdLocationOn,MdLanguage} from "react-icons/md"
 import { FaTags, FaCheck,FaHtml5,FaCss3Alt,FaBootstrap,FaBirthdayCake,FaFlag,FaUserTie,FaReact,FaJs,FaEye,FaGithub} from 'react-icons/fa';
 export const Emoji = props => (
@@ -80,8 +81,21 @@ export const projectsData=[
         prograPhoto:<FaJs className="js"/>,
         btns: (
             <div className="btns">
-                <a className="btn" href="https://warehousereact.netlify.app/products"><FaEye className="btn-icon"/>Preview</a>
-                <a className="btn" href="https://github.com/simuxs123/warehouse"><FaGithub className="btn-icon"/>GitHub</a>
+                <a className="btn" href="https://simuxs123.github.io/weatherApi/"><FaEye className="btn-icon"/>Preview</a>
+                <a className="btn" href="https://github.com/simuxs123/weatherApi.git"><FaGithub className="btn-icon"/>GitHub</a>
+            </div>   
+        )
+    },
+    {
+        id:9,
+        photo:<img src={post} alt=""/>,
+        tags:<p className="tag"><FaTags className="tag-icon" /><span>Html5, Css3, JS, Bootstrap, API</span></p>,
+        title:<h2>Postcode App with</h2>,
+        prograPhoto:<FaJs className="js"/>,
+        btns: (
+            <div className="btns">
+                <a className="btn" href="https://simuxs123.github.io/postCode-API/"><FaEye className="btn-icon"/>Preview</a>
+                <a className="btn" href="https://github.com/simuxs123/postCode-API.git"><FaGithub className="btn-icon"/>GitHub</a>
             </div>   
         )
     }
