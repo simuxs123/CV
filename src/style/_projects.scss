@@ -33,11 +33,10 @@
                 top: 0;
                 width: 100%;
                 .tag{
-                    align-self: flex-end;
                     position: absolute;
                     bottom:0;
-                    margin-right:3px;
-                    margin-bottom: 3px;
+                    margin-right:4px;
+                    margin-bottom: 4px;
                     font-size: .7rem;
                     color: $secondary-color;
                     &-icon{
@@ -47,7 +46,6 @@
                     }
                 }
                 svg {
-                    margin-top: .3rem;
                     font-size: 4rem;
                 }
                 .react{

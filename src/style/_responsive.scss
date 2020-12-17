@@ -2,6 +2,14 @@
     .menu {
         background-size:contain;
     }
+    .projects{
+        .tag{
+            align-self: flex-end;
+        }
+        svg {
+            margin-top: .5rem;
+        }
+    }    
 }
 @include media-md {
     .burger-btn{
