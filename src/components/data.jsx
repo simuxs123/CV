@@ -1,6 +1,6 @@
-import logo from "../style/img/react.jpg";
-import world from "../style/img/world.jpg";
-import weather from "../style/img/weather.jpg";
+import logo from "../style/img/react1.jpg";
+import world from "../style/img/world1.jpg";
+import weather from "../style/img/weather1.jpg";
 import post from "../style/img/post.jpg";
 import {
   MdPhoneIphone,
@@ -98,11 +98,11 @@ export const projectsData = [
     ),
     btns: (
       <div className="btns">
-        <a className="btn" href="https://wareh0use.vercel.app/">
+        <a target='_blank' rel="noreferrer" className="btn" href="https://wareh0use.vercel.app/">
           <FaEye className="btn-icon" />
           Preview
         </a>
-        <a className="btn" href="https://github.com/simuxs123/warehouse">
+        <a target='_blank' rel="noreferrer" className="btn" href="https://github.com/simuxs123/warehouse">
           <FaGithub className="btn-icon" />
           GitHub
         </a>
@@ -122,11 +122,11 @@ export const projectsData = [
     ),
     btns: (
       <div className="btns">
-        <a className="btn" href="https://c0untries.vercel.app/">
+        <a target='_blank' rel="noreferrer" className="btn" href="https://c0untries.vercel.app/">
           <FaEye className="btn-icon" />
           Preview
         </a>
-        <a className="btn" href="https://github.com/simuxs123/reactSalys">
+        <a target='_blank' rel="noreferrer" className="btn" href="https://github.com/simuxs123/reactSalys">
           <FaGithub className="btn-icon" />
           GitHub
         </a>
@@ -146,11 +146,11 @@ export const projectsData = [
     prograPhoto: <FaJs className="js" />,
     btns: (
       <div className="btns">
-        <a className="btn" href="https://simuxs123.github.io/weatherApi/">
+        <a target='_blank' rel="noreferrer" className="btn" href="https://simuxs123.github.io/weatherApi/">
           <FaEye className="btn-icon" />
           Preview
         </a>
-        <a className="btn" href="https://github.com/simuxs123/weatherApi.git">
+        <a target='_blank' rel="noreferrer" className="btn" href="https://github.com/simuxs123/weatherApi.git">
           <FaGithub className="btn-icon" />
           GitHub
         </a>
@@ -170,11 +170,11 @@ export const projectsData = [
     prograPhoto: <FaJs className="js" />,
     btns: (
       <div className="btns">
-        <a className="btn" href="https://simuxs123.github.io/postCode-API/">
+        <a target='_blank' rel="noreferrer" className="btn" href="https://simuxs123.github.io/postCode-API/">
           <FaEye className="btn-icon" />
           Preview
         </a>
-        <a className="btn" href="https://github.com/simuxs123/postCode-API.git">
+        <a target='_blank' rel="noreferrer" className="btn" href="https://github.com/simuxs123/postCode-API.git">
           <FaGithub className="btn-icon" />
           GitHub
         </a>

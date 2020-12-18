@@ -1,6 +1,6 @@
 .about_me{
     &-image{
-        @include flex-image(39vh,"./img/about.jpg");
+        @include flex-image(39vh,"./img/about1.jpg");
         @include flex-all(column,nowrap,center,center);
     }
     &-list{

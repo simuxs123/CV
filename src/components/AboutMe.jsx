@@ -1,5 +1,5 @@
 import React from 'react'
-import user from '../style/img/simas1.jpg'
+import user from '../style/img/simas11.jpg'
 import {Footer} from './Footer'
 import { FaCircle} from 'react-icons/fa';
 import {experienceData,personalData,educationData,Emoji} from './data'

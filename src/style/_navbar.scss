@@ -23,9 +23,22 @@
         &-item {
             transform: translateX(100vw);
             @include transition-ease;
+            a:after{
+                content: '';
+                display: block;
+                width: 0px;
+                margin: auto;;
+                height: 2px;
+                background: transparent;
+                @include transition-ease;
+            }
+            a:hover:after{
+                    width: 100%;
+                    background: $hover-color;
+            }
             :hover {
                 @include transition-ease;
-                color:$hover-color;
+                color:$hover-color;              
             }
             &.open {
                 transform: translateX(0);
