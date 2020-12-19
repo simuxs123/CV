@@ -4,6 +4,14 @@
     padding-top: 39vh;
     text-align: center;
     color:$secondary-color;
+    .btn{
+        background-color: red;
+        padding: .5rem .75rem;
+        margin-top: 1rem;
+        border-radius: 10px;
+        position: relative;
+        top: 10px;
+    }
     &-name {
         color:$hover-color;
         font-weight: 600;
