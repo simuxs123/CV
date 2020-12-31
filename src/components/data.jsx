@@ -3,6 +3,13 @@ import world from "../style/img/world1.jpg";
 import weather from "../style/img/weather1.jpg";
 import post from "../style/img/post.jpg";
 import {
+  SiMysql,
+  SiPhp
+} from "react-icons/si";
+import {
+  GiSandsOfTime
+} from "react-icons/gi";
+import {
   MdPhoneIphone,
   MdEmail,
   MdLocationOn,
@@ -21,6 +28,7 @@ import {
   FaJs,
   FaEye,
   FaGithub,
+  FaPython
 } from "react-icons/fa";
 export const Emoji = (props) => (
   <span
@@ -275,7 +283,7 @@ export const personalData = [
         <p>
           <span className="info-item">
             <MdEmail className="icon" />
-            E-mail:
+            E - mail:
           </span>
           <a href="mailto:paulius.simonas@gmail.com">
             {" "}
@@ -345,6 +353,30 @@ export const personalData = [
             Bootstrap
           </span>
           <FaCheck className="check" />
+        </p>
+        <hr />
+        <p>
+          <span className="info-item">
+            <SiPhp className="icon" />
+            PHP
+          </span>
+          <GiSandsOfTime className="progress" />
+        </p>
+        <hr />
+        <p>
+          <span className="info-item">
+            <SiMysql className="icon" />
+            MySQL
+          </span>
+          <GiSandsOfTime className="progress" />
+        </p>
+        <hr />
+        <p>
+          <span className="info-item">
+            <FaPython className="icon" />
+            Python
+          </span>
+          <GiSandsOfTime className="progress" />
         </p>
         <hr />
       </>

@@ -6,7 +6,7 @@
     &-list{
         @include flex-all(column,nowrap,initial,initial);
         .details {
-            padding-top: 14vh;
+            padding-top: 80px;
             padding-bottom: 3vh;
             background: linear-gradient(
             to right,
@@ -88,16 +88,20 @@
                     padding: 0 .2rem;
                     @include flex-all(row,nowrap,initial,space-between);
                 }
+                svg {
+                    width: 21px;
+                    height: auto;
+                }
                 .icon {
                     color: $secondary-color;
-                    font-size: 1rem;
                     margin-right: .2rem;
-                    width: 20px;
-                    height: auto;
+                   
                 }
                 .check {
                     color: rgb(14, 189, 14);
-                    margin-left: .5rem;
+                }
+                .progress {
+                    color:$hover-color;
                 }
                 }
             .info-title{
