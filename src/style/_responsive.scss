@@ -2,9 +2,31 @@
     .menu {
         background-size:contain;
     }
+    .about_me-list .personal_container{
+        &-info {
+            width: 70%;
+            p{
+                @include flex-all(row,nowrap,center,space-between);
+                height: initial;
+            }
+        }
+    }
     .projects{
-        .tag{
-            align-self: flex-end;
+        &-items-item{
+            height: 255px;
+            .item-content{
+                .tag{
+                    align-self: flex-end;
+                    right: 10px;
+                }
+                .btns {
+                    margin-top: .5rem;
+                }
+                svg {
+                    margin-top: .5rem;
+                    font-size: 3.6rem;
+                    }
+            }
         }
     }    
 }
@@ -193,6 +215,9 @@
     }
     .about_me{
         font-size: 1.3vw;
+        &-image {
+            height: 40vh;
+        }
         &-list{
             .exp-educ .experience-line{
                 margin: 1vw 7.4vw;
@@ -213,8 +238,13 @@
                 padding: 9vh 5.5vw;
                 &-info {
                     flex: 0 0 30%;
+                    svg {
+                        width: 1.7vw;
+                    }
+                    .info-title{
+                        margin: 0 0 4.4rem 0;
+                    }
                     .icon {
-                        width:2vw;
                         margin-right: .5rem;
                     }
                 }
@@ -243,6 +273,9 @@
         }
     }
     .projects{
+        &-image {
+            height: 40vh;
+        }
         h1 {
             font-size: 4vw;
         }
@@ -251,16 +284,18 @@
             font-size: 2.3vw;
         }
         &-items{
+            padding: 1.5vw 1vw;
             &-item {
                 height: 32vh;
                 border-bottom-width: .3vw;
                 flex: 0 0 28%;
+                margin: 1.5vw 0;
                 .item-content {
                     font-size: 1.4vw;
                     .tag{
                         font-size: 1vw;
-                        margin-bottom: .5vw;
-                        margin-right: .4vw;
+                        bottom: .3vw;
+                        right: .7vw;
                         &-icon{
                             font-size: 1.1vw;
                         }

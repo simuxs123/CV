@@ -1,6 +1,6 @@
 .about_me{
     &-image{
-        @include flex-image(39vh,"./img/about1.jpg");
+        @include flex-image(210px,"./img/about1.jpg");
         @include flex-all(column,nowrap,center,center);
     }
     &-list{
@@ -80,13 +80,18 @@
                 rgba($primary-color,0.8),
                 rgba($primary-color,0.4)
              ), white ;
-            padding: 2rem 0;
+            padding: 1.5rem .4rem;
             &-info {
-                padding-bottom: 1.5rem;
-                width: 75vw;
+                margin:1.5rem 0;
+                width: 67%;
+                .skills p{
+                    @include flex-all(row,nowrap,center,space-between);
+                    height: initial;
+                }
                 p{
                     padding: 0 .2rem;
-                    @include flex-all(row,nowrap,initial,space-between);
+                    @include flex-all(column,nowrap,center,space-between);
+                    height: 50px;
                 }
                 svg {
                     width: 21px;

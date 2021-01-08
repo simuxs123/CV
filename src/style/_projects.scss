@@ -10,11 +10,11 @@
     }
     &-items{
         @include flex-all(column,nowrap,center,center);
-        padding: 10vh 1vw;
+        padding: 1.5rem .4rem;
         &-item{
-            margin:0 0 3rem 0;
-            height: 210px;
-            width: 68vw;
+            margin:1.5rem 0;
+            height: 200px;
+            width: 73vw;
             background-color: lighten($color: $primary-color, $amount: 10);
             text-align: center;
             position: relative;
@@ -34,9 +34,7 @@
                 width: 100%;
                 .tag{
                     position: absolute;
-                    bottom:0;
-                    margin-right:4px;
-                    margin-bottom: 4px;
+                    bottom:4px;
                     font-size: .7rem;
                     color: $secondary-color;
                     &-icon{
@@ -46,8 +44,8 @@
                     }
                 }
                 svg {
-                    margin-top: .4rem;
-                    font-size: 4rem;
+                    margin-top: .3rem;
+                    font-size: 3.3rem;
                 }
                 .react{
                     color: lightskyblue;
@@ -57,7 +55,6 @@
                 }
                 
                 .btns {
-                    margin-top: .3rem;
                     .btn{
                         padding:0 .8rem;
                         &-icon{

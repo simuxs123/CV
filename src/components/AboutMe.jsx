@@ -58,8 +58,8 @@ export const AboutMe = () => {
                         {personalData.map((item,index)=>(
                             <div key={index} className="personal_container-info">
                                 {item.personal&&item.personal}
-                                {item.contacts&&item.contacts}
                                 {item.skills&&item.skills}
+                                {item.contacts&&item.contacts}
                             </div>
                         ))}
                     </div>}

@@ -267,51 +267,8 @@ export const personalData = [
     ),
   },
   {
-    contacts: (
-      <>
-        <h2 className="info-title">
-          <span className="line-title">Contacts</span>
-        </h2>
-        <p>
-          <span className="info-item">
-            <MdPhoneIphone className="icon" />
-            Phone Number:
-          </span>
-          <a href="tel:+37064612906"> +37064612906</a>
-        </p>
-        <hr />
-        <p>
-          <span className="info-item">
-            <MdEmail className="icon" />
-            E - mail:
-          </span>
-          <a href="mailto:paulius.simonas@gmail.com">
-            {" "}
-            paulius.simonas@gmail.com
-          </a>{" "}
-        </p>
-        <hr />
-        <p>
-          <span className="info-item">
-            <MdLocationOn className="icon" />
-            Location:
-          </span>
-          <a
-            href="https://www.google.lt/maps/search/klaipeda/@55.7052607,21.017809,11z"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {" "}
-            Klaipeda
-          </a>
-        </p>
-        <hr />
-      </>
-    ),
-  },
-  {
     skills: (
-      <>
+      <div className="skills">
         <h2 className="info-title">
           <span className="line-title">Skills</span>
         </h2>
@@ -379,7 +336,51 @@ export const personalData = [
           <GiSandsOfTime className="progress" />
         </p>
         <hr />
-      </>
+      </div>
     ),
   },
+  {
+    contacts: (
+      <>
+        <h2 className="info-title">
+          <span className="line-title">Contacts</span>
+        </h2>
+        <p>
+          <span className="info-item">
+            <MdPhoneIphone className="icon" />
+            Phone Number:
+          </span>
+          <a href="tel:+37064612906"> +37064612906</a>
+        </p>
+        <hr />
+        <p>
+          <span className="info-item">
+            <MdEmail className="icon" />
+            E - mail:
+          </span>
+          <a href="mailto:paulius.simonas@gmail.com">
+            {" "}
+            paulius.simonas@gmail.com
+          </a>{" "}
+        </p>
+        <hr />
+        <p>
+          <span className="info-item">
+            <MdLocationOn className="icon" />
+            Location:
+          </span>
+          <a
+            href="https://www.google.lt/maps/search/klaipeda/@55.7052607,21.017809,11z"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            Klaipeda
+          </a>
+        </p>
+        <hr />
+      </>
+    ),
+  }
+  
 ];
