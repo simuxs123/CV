@@ -1,6 +1,6 @@
 .projects {
     &-image{
-        @include flex-image(39vh,"./img/project1.jpg");
+        @include flex-image(220px,"./img/project1.jpg");
         @include flex-all(row,nowrap,center,center);
         h1{
             margin-bottom: 2.7rem;
